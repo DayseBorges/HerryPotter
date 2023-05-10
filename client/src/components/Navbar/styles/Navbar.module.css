@@ -1,0 +1,52 @@
+.containerHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 10px;
+}
+
+.logo {
+    margin-top: 30px;
+    padding: 8px 0;
+    width: 15vw;
+    cursor: pointer;
+}
+
+.navLinks {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    font-size: 1.5vw;
+    letter-spacing: 3px;
+    color: rgb(147, 115, 77);
+    font-family: 'Macondo', cursive;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.link {
+    transition: 0.4s;
+}
+
+.link:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.linkActive {
+    font-weight: 800;
+}
+
+@media (max-width:600px) {
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+    .logo {
+        width: 40vw;
+
+    }
+}
