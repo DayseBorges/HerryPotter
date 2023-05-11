@@ -2,6 +2,8 @@ import './App.css';
 import { Routes, Route } from "react-router-dom"
 import Home from "./pages/Home/Home"
 import Footer from "./components/Footer/Footer"
+import Contact from "./pages/Contact/Contact"
+import About from "./pages/About/About"
 import axios from "axios";
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
@@ -23,6 +25,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />}/>
+        <Route path='/contact' element={<Contact />}/>
+        <Route path='/about' element={<About />}/>
       </Routes>
       <Footer />
     </div>

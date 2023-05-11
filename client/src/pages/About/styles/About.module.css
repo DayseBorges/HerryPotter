@@ -1,0 +1,25 @@
+.containerAbout {
+    font-size: 22px;
+}
+
+.paragraph {
+    background-color: rgb(220, 220, 220);
+    border-radius: 30px;
+    width: 60vw;
+    padding: 15px 20px;
+    margin-bottom: 58px;
+    margin-top: 58px;
+    margin-left: auto;
+}
+
+.text {
+    color: #6f482e;
+    font-family: "Quicksand", sans-serif;
+    text-align: justify;
+}
+
+@media screen and (max-width: 600px){
+    .paragraph {
+        width: 90vw;
+    }
+  }
