@@ -2,7 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   data: [],
-  form: [],
+  form: {
+    name: "Dayse",
+    email: "dayseborges@gmail.com",
+    message: "contact me"
+  },
   about: {
     paragraph1:
       "Welcome to the magical world of Harry Potter! This page is dedicated to all things related to J.K. Rowling's beloved series. Join us on a journey through the enchanting corridors of Hogwarts School of Witchcraft and Wizardry, where extraordinary adventures, captivating characters, and awe-inspiring magic await.",
@@ -26,10 +30,7 @@ export const charactersSlice = createSlice({
       };
     },
     formData: (state, action) => {
-      return {
-        ...state,
-        form: action.payload,
-      };
+        state = action.payload
     },
   },
 });

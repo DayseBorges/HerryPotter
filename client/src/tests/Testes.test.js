@@ -1,11 +1,12 @@
 import {
-  suma,
   filtrarNumeroMasAlto,
   primerLetraMayuscula,
-  cualEsMayor,
-} from "../utilities/helpers";
+  cualEsMayor, 
+  suma 
+} from "../utilities/mockHelpers"
 
 describe("Home", () => {
+
   test("Debería retornar la suma correcta de los números", () => {
     let response = suma(5, 5);
     expect(response).toBe(10);
