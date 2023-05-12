@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return ( 
         <>
-        <img className={style.logo} src={img} alt="logo" />
+        <img onClick={() => navigate("/")} className={style.logo} src={img} alt="logo" />
         <div className={style.containerHeader}>
             
             <ul className={style.navLinks}>

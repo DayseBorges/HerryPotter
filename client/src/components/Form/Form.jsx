@@ -21,7 +21,6 @@ const Contact = () => {
 
     if (name && email && message) {
       dispatch(formData(contactData));
-      console.log("Form Data:", contactData);
       Swal.fire({
         title: "Success!",
         text: "Message sent",
